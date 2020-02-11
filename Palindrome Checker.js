@@ -1,10 +1,8 @@
 
-function palindrome(str) {
-  // Good luck!
-  
-  var myReg = /[\W_]/g;
-  var newStr = str.replace(myReg, "").toLowerCase();
-  var invStr = newStr.split("").reverse().join("");
+const palindrome = (str) => {
+  let myReg = /[\W_]/g;
+  let newStr = str.replace(myReg, "").toLowerCase();
+  let invStr = newStr.split("").reverse().join("");
   if (newStr === invStr){
     return true;
   } else {
